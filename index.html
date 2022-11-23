@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.min.css?_v=20221123210842">
+    <link rel="stylesheet" href="./css/style.min.css?_v=20221123212053">
     <title>Document</title>
   </head>
   <body>
-    <header>
+    <header id="header">
       <div class="container">
         <div class="header-cap">
           <div class="header-contacts plain-text">
@@ -115,8 +115,8 @@
             <div class="hero-slider__switch">
               <div><span class="slider-namber-active">01</span><span class="slider-namber">/ 04</span></div>
               <div class="hero-slider__button-wrap">
-                <button class="slider-button"><span class="icon-arrow-left"></span></button>
-                <button class="slider-button"><span class="icon-arrow-right"></span></button>
+                <button class="slider-button" aria-label="slider button left"><span class="icon-arrow-left"></span></button>
+                <button class="slider-button" aria-label="slider button right"><span class="icon-arrow-right"></span></button>
               </div>
             </div>
           </div>
@@ -145,19 +145,19 @@
             <ul class="row vantages__list">
               <li class="vantages__item col-lg-4"><picture><source srcset="./img/vantages-img-1.webp" type="image/webp"><img src="./img/vantages-img-1.jpg" alt="" loading="lazy"></picture>
                 <div class="vantages__content">
-                  <h3 class="title-3 w-color text-underline">Меблі преміум класу</h3><span class="vantages-text-show plain-text">
+                  <h3 class="title-3 color-white text-underline">Меблі преміум класу</h3><span class="vantages-text-show plain-text">
                     За 14 років на ринку меблів для дому ми стали надійними партнерами на ринку Вінницької області та України</span>
                 </div>
               </li>
               <li class="vantages__item col-lg-4 vantages__item--show"><picture><source srcset="./img/vantages-img-2.webp" type="image/webp"><img src="./img/vantages-img-2.jpg" alt="" loading="lazy"></picture>
                 <div class="vantages__content">
-                  <h3 class="title-3 w-color text-underline">Надійність</h3><span class="vantages-text-show plain-text">
+                  <h3 class="title-3 color-white text-underline">Надійність</h3><span class="vantages-text-show plain-text">
                     За 14 років на ринку меблів для дому ми стали надійними партнерами на ринку Вінницької області та України</span>
                 </div>
               </li>
               <li class="vantages__item col-lg-4 vantages__item--show"><picture><source srcset="./img/vantages-img-3.webp" type="image/webp"><img src="./img/vantages-img-3.jpg" alt="" loading="lazy"></picture>
                 <div class="vantages__content">
-                  <h3 class="title-3 w-color text-underline">Безкоштовна доставка</h3><span class="vantages-text-show plain-text">
+                  <h3 class="title-3 color-white text-underline">Безкоштовна доставка</h3><span class="vantages-text-show plain-text">
                     За 14 років на ринку меблів для дому ми стали надійними партнерами на ринку Вінницької області та України</span>
                 </div>
               </li>
@@ -286,6 +286,56 @@
         </div>
       </div>
     </section>
-    <script src="./js/app.min.js?_v=20221123210842"></script>
+    <section class="footer-section">
+      <div class="container">
+        <div class="row">
+          <div class="footer-content-wrap col-xl-5"><a class="top-button" aria-label="top sckroll" href="#header"><span class="icon-arrow"></span></a>
+            <div class="footer-logo-holder"><a class="footer-logo" aria-label="logo" href=""><img src="./img/footer-logo.svg" alt=""></a></div>
+            <div class="footer-content plain-text">
+              <nav class="footer-nav">
+                <ul class="footer-nav__list">
+                  <li class="footer-nav__item"><a href="">Дивани</a></li>
+                  <li class="footer-nav__item"><a href="">Ліжка</a></li>
+                  <li class="footer-nav__item"><a href="">Крісла</a></li>
+                  <li class="footer-nav__item"><a href="">Шафи</a></li>
+                  <li class="footer-nav__item"><a href="">Кухні</a></li>
+                  <li class="footer-nav__item"><a href="">Комоди</a></li>
+                </ul>
+              </nav>
+              <nav class="footer-nav">
+                <ul class="footer-nav__list">
+                  <li class="footer-nav__item"><a href="">АкцІї</a></li>
+                  <li class="footer-nav__item"><a href="">Доставка та оплата</a></li>
+                  <li class="footer-nav__item"><a href="">Про нас</a></li>
+                  <li class="footer-nav__item"><a href="">Контакти</a></li>
+                </ul>
+              </nav>
+              <div class="footer-inf-holder plain-text color-white">
+                <ul class="footer-inf">
+                  <li class="footer-inf__item"><span class="icon-map-pin footer-icon"></span><span>TEST</span></li>
+                  <li class="footer-inf__item"><span class="icon-calendar footer-icon"></span><span>Пн-Пт, з 10 до 18</span></li>
+                  <li class="footer-inf__item"><span class="icon-mobile footer-icon"></span>
+                    <div class="tel-holder"><a class="footer-tel" href="tel:+380991112233">(099) 111 22 33</a><a class="footer-tel pt-5" href="tel: +380992223344">(099) 222 33 44</a></div>
+                  </li>
+                </ul>
+                <div class="footer-social"><span>Ми в соціальних мережах:</span>
+                  <ul class="socials justify-content-start">
+                    <li class="socials__item"><a class="socials__link" aria-label="telegram" href=""><span class="icon-telegram"></span></a></li>
+                    <li class="socials__item"><a class="socials__link" aria-label="facebook" href=""><span class="icon-facebook"></span></a></li>
+                    <li class="socials__item"><a class="socials__link" aria-label="instagram" href=""><span class="icon-instagram"></span></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <p class="plain-text color-white">&#169; ТОВ Furniture, працюємо з 2006 року</p>
+          </div>
+          <picture class="footer-img col-xl-7">
+            <source srcet="./img/footer-img-1x.webp 1x, ./img/footer-img-2x.webp 2x" type="image/webp">
+            <source srcet="./img/footer-img-1x.jpg 1x, ./img/footer-img-2x.jpg 2x" type="image/jpeg"><img src="./img/footer-img-1x.jpg" alt="Про нас" loading="lazy">
+          </picture>
+        </div>
+      </div>
+    </section>
+    <script src="./js/app.min.js?_v=20221123212053"></script>
   </body>
 </html>

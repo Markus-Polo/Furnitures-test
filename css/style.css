@@ -753,6 +753,10 @@ hr {
   speak: never;
 }
 
+.icon-arrow:before {
+  content: "\e90f";
+}
+
 .icon-arrow-left:before {
   content: "\e908";
 }
@@ -1423,6 +1427,7 @@ hr {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-bottom: 50px;
 }
 
 .cta__content {
@@ -1449,6 +1454,126 @@ hr {
 
 .cta__picture {
   display: none;
+}
+
+.footer-section {
+  background-color: #1e2e36;
+}
+
+.top-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: -26px;
+  left: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background-color: #44c697;
+  color: white;
+  font-size: 18px;
+}
+
+.footer-content-wrap {
+  position: relative;
+  padding: 18px 40px 0;
+}
+
+.footer-logo-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 16px;
+}
+
+.footer-nav__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 15px;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.footer-nav__item:before {
+  content: "";
+  width: 16px;
+  height: 2px;
+  margin-right: 4px;
+  background-color: #44c697;
+}
+
+.footer-inf-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.footer-inf {
+  padding-bottom: 30px;
+}
+
+.footer-inf__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 15px;
+}
+
+.tel-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer-icon {
+  padding-right: 5px;
+  font-size: 22px;
+}
+
+.footer-tel {
+  color: #44c697;
+}
+
+.footer-img {
+  display: none;
+  padding-left: 0;
 }
 
 .p-0 {
@@ -1547,6 +1672,10 @@ hr {
   margin-top: 15px;
 }
 
+.ml-0 {
+  margin-left: 0;
+}
+
 .d-flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1557,6 +1686,12 @@ hr {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.justify-content-start {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .justify-content-end {
@@ -1579,7 +1714,7 @@ hr {
   text-transform: uppercase;
 }
 
-.w-color {
+.color-white {
   color: white;
 }
 
@@ -1891,6 +2026,17 @@ hr {
   .g-sm-5,
   .gy-sm-5 {
     --bs-gutter-y: 3rem;
+  }
+
+  .footer-inf-holder {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: auto;
   }
 }
 
@@ -2906,6 +3052,7 @@ hr {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    padding-bottom: 100px;
   }
 
   .cta__content {
@@ -2919,6 +3066,16 @@ hr {
 
   .cta__picture {
     display: block;
+  }
+
+  .footer-logo-holder {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+
+  .footer-img {
+    display: inline-block;
   }
 
   .plain-text {
@@ -3238,6 +3395,14 @@ hr {
 
   .bed__info {
     font-size: 24px;
+  }
+
+  .footer-content-wrap {
+    padding: 50px 40px 0;
+  }
+
+  .footer-content {
+    padding-bottom: 50px;
   }
 
   .plain-text {
